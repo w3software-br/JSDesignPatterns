@@ -1,12 +1,14 @@
 'strict'
 
 const DrownedGod = (function () {
+
   function DrownedGod() {
     //...
   }
 
-  DrownedGod.prototype.prayTo = function (sacrifice) {
-    console.log("We Old Gods hear your prayer");
+  DrownedGod.prototype.prayTo = function (humanSacrifice) {
+    console.log("Yeahh. We are bad, very bad :-)."
+    +" Thank you for the human sacrifice: " + humanSacrifice);
   }
 
 })();
