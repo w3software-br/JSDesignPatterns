@@ -13,5 +13,6 @@ const OldGodAdapter = (function () {
     this.oldGod.prayTo(new Sacrifice("My sacrifice to a Old God"));
   }
 
+  return OldGodAdapter;
 
 })()

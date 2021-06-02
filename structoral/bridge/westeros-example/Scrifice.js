@@ -9,4 +9,9 @@ const Scrifice = (function () {
   Sacrifice.prototype.getDescription = function (description) {
     return this.description;
   }
-})()
+
+  return Sacrifice;
+
+})();
+
+module.exports = Sacrifice;
