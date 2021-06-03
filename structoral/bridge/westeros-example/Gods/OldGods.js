@@ -3,11 +3,12 @@
 const OldGod = (function () {
 
   function OldGod() {
-    //...
+    this.sacrifice = null;
   }
 
   OldGod.prototype.prayTo = function (sacrifice) {
-    console.log(`We Old Gods hear your pray. Thank you for ${sacrifice.getDescription()}`);
+    this.sacrifice = sacrifice;
+    console.log(`We Old Gods hear your pray. Thank you for "${sacrifice.getDescription()}"`);
   }
 
   return OldGod;

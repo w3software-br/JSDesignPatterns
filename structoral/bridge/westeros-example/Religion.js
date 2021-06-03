@@ -1,6 +1,7 @@
 'strict'
 
-const OldGod = require("./Gods/OldGods")
+const OldGodAdapter = require('./Adapters/OldGodsAdapter');
+const DrownedGodAdapter = require('./Adapters/DrownedGodAdapter')
 
 const Religion = (function () {
 
@@ -9,8 +10,15 @@ const Religion = (function () {
   }
 
   Religion.prototype.OldGoodAdapter = function () {
-    return new OldGod();
+    return new OldGodAdapter();
   }
 
+  Religion.prototype.DrownedGodAdapter = function () {
+    return new DrownedGodAdapter();
+  }
+
+  return Religion;
   
-})()
+})();
+
+module.exports = Religion;

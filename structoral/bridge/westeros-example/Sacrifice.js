@@ -1,6 +1,6 @@
 'strict'
 
-const Scrifice = (function () {
+const Sacrifice = (function () {
 
   function Sacrifice(description) {
     this.description = description;
