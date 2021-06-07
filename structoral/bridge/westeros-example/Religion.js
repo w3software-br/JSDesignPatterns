@@ -2,6 +2,7 @@
 
 const OldGodAdapter = require('./Adapters/OldGodsAdapter');
 const DrownedGodAdapter = require('./Adapters/DrownedGodAdapter')
+const SevenGodsAdapter = require('./Adapters/SevenGodsAdapter');
 
 const Religion = (function () {
 
@@ -15,6 +16,10 @@ const Religion = (function () {
 
   Religion.prototype.DrownedGodAdapter = function () {
     return new DrownedGodAdapter();
+  }
+
+  Religion.prototype.SevenGodsAdapter = function () {
+    return new SevenGodsAdapter();
   }
 
   return Religion;

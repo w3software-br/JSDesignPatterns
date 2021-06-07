@@ -8,7 +8,7 @@ const OldGod = (function () {
 
   OldGod.prototype.prayTo = function (sacrifice) {
     this.sacrifice = sacrifice;
-    console.log(`We Old Gods hear your pray. Thank you for "${sacrifice.getDescription()}"`);
+    console.log(`We Old Gods hear your pray. Thank you for "${sacrifice.getDescription()}"` + "\n");
   }
 
   return OldGod;

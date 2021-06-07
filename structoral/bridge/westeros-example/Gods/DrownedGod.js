@@ -9,7 +9,7 @@ const DrownedGod = (function () {
   DrownedGod.prototype.prayTo = function (humanSacrifice) {
     this.sacrifice = humanSacrifice;
     console.log("Yeahh. We are bad, very bad :-)."
-    +" Thank you for the human sacrifice: " + this.sacrifice);
+    +" Thank you for the human sacrifice: " + this.sacrifice.getDescription() + "\n");
   }
 
   return DrownedGod;
