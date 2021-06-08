@@ -5,11 +5,11 @@ const PrayerPurposeProvider = require('./../PrayerPurposeProvider');
 const SevenGodsAdapter = (function () {
 
   function SevenGodsAdapter() {
-    // console.log(PrayerPurposeProvider);
+    this.sevenGods = new SevenGods();
   }
 
   SevenGodsAdapter.prototype.prayTo = function () {
-    return new SevenGods(new PrayerPurposeProvider("This is a pray propurse to one of seven gods"));
+    return this.sevenGods.prayTo(new PrayerPurposeProvider("This is a pray propurse to one of seven gods"));
   }
 
   return SevenGodsAdapter;

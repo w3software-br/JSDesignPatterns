@@ -3,7 +3,6 @@
 const PrayerPurposeProvider = (function () {
 
   function PrayerPurposeProvider(description) {
-    console.log("Creating prayer porpuse provider")
     this.description = description;
   }
 
