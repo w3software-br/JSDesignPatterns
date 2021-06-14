@@ -4,7 +4,7 @@ function Employee(name) {
   this.name = name
 
   this.say = function() {
-    log.add("I am employee " + name)
+    log.add("I am employee " + this.name)
   }
 }
 

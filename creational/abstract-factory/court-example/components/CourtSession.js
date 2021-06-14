@@ -3,7 +3,7 @@
 const CourtSession = (function() {
 	function CourtSession(abstractFactory) {
 		this.abstractFactory = abstractFactory
-		this.COMPLAINT_THRESHOLD = 10
+		this.COMPLAINT_THRESHOLD = 10; // LIMITE DE RECLAMAÇÃO
 	}
 
 	CourtSession.prototype.complaintPresented = function(complaint) {
