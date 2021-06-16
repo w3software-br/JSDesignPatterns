@@ -1,12 +1,20 @@
 'strict'
 
-const GodFactory = require('./GodFactory')
+const GodFactory = require('./GodFactory');
 
-function Prayer() {
-  this.pray = function(godName) {
-    let godFactory = new GodFactory()
-    return godFactory.build(godName)
+const Prayer = (function () {
+
+  function Prayer() {
+    //...
   }
-}
 
-module.exports = Prayer
+  Prayer.prototype.pray = function (godName) {
+    let godFactory = new GodFactory();
+    return godFactory.build(godName);
+  }
+
+  return Prayer;
+
+})();
+
+module.exports = Prayer;
