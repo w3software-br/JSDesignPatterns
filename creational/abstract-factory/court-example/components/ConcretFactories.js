@@ -6,7 +6,7 @@ const Lords = require('./Lords')
 const LennisterFactory = (function() {
   
   function LennisterFactory() {
-
+    //...
   }
 
   LennisterFactory.prototype.getKing = function() {
@@ -24,7 +24,7 @@ const LennisterFactory = (function() {
 const TargaryenFactory = (function() {
   
   function TargaryenFactory() {
-    // console.log("TargaryenFactory created")
+    //...
   }
 
   TargaryenFactory.prototype.getKing = function() {

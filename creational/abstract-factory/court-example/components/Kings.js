@@ -3,7 +3,7 @@
 const KingJoffery = (function () {
 
   function KingJoffery() {
-
+    //...
   }
 
   KingJoffery.prototype.makeDecision = function() {
@@ -19,7 +19,9 @@ const KingJoffery = (function () {
 })()
 
 const KingAerys = (function(){
-  function KingAerys() {}
+  function KingAerys() {
+    //...
+  }
   
   KingAerys.prototype.makeDecision = function() {
     console.log("Decision of the King Aerys")

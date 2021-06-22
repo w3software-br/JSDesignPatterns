@@ -1,5 +1,5 @@
 'strict'
-const Factories = require('./components/Factories')
+const Factories = require('./components/ConcretFactories')
 const CourtSession = require('./components/CourtSession') 
 
 let courtSession1 = new CourtSession(new Factories.TargaryenFactory())
