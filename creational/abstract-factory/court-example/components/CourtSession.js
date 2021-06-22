@@ -16,6 +16,6 @@ const CourtSession = (function() {
 
 	return CourtSession
 
-})()
+})();
 
 module.exports = CourtSession
