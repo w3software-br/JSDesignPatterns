@@ -1,11 +1,11 @@
 'strict'
 
-const ModelB = require('./../Models/ModelB');
+const ProductB = require('../Models/ProductB');
 
 const FactoryB = (function () {
   
   function FactoryB() {
-    this.instance = new ModelB('att1 for ModelB', 'att2 for ModelB');
+    this.instance = new ProductB('att1 for ProductB', 'att2 for ProductB');
   }
 
   FactoryB.prototype.getInstance = function () {

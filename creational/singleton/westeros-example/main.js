@@ -1,12 +1,11 @@
 'strict'
 
-function Westeros() {
-  this.Test = "Test"
-  this.Wall = () =>  {
-    this.heght = 0;
-    return [this.Test, this.heght, this]
-  }
-}
+const Builder = require('./components/Builder');
 
-let westeros = new Westeros()
-console.log(westeros.Wall())
+const builder = new Builder();
+const wall_one = builder.getWall();
+const wall_twoo = builder.getWall();
+
+console.log(wall_one == wall_twoo);
+
+
