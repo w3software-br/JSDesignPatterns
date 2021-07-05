@@ -1,17 +1,17 @@
-'strict'
+'use strict'
 
 const Wall = (function () {
 
   function Wall() {
-    //...
+    this.height = null;
   }
   
   Wall.prototype.setHeight = function (height) {
     this.height = height;
   } 
 
-  Wall.prototype.getStatus = function () {
-    console.log("The memory addess of the instance is: " + this);
+  Wall.prototype.getHeight = function () {
+    return this.height;
   }
 
   return Wall;
